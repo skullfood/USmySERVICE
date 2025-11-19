@@ -46,6 +46,12 @@
         .text-shadow-strong {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
+
+        /* Custom Text Stroke (Fill visible + Outline) */
+        .text-stroke-white {
+            -webkit-text-stroke: 2px white;
+            paint-order: stroke fill;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -108,7 +114,7 @@
                 </div>
                 <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 uppercase text-shadow-strong">
                     The Fastest <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-white">Branding Agency</span>
+                    <span class="text-red-600 text-stroke-white">Branding</span> <span class="text-blue-500 text-stroke-white">Agency</span>
                 </h1>
                 <p class="text-xl text-blue-100 mb-8 max-w-lg mx-auto md:mx-0 text-shadow-strong">
                     We beat the market with our prices. From designing your physical products, displays, and brand to AI-powered social media, we are your one-stop design powerhouse.
@@ -215,25 +221,25 @@
                 <div class="md:w-1/2">
                     <div class="grid grid-cols-2 gap-4">
                         <!-- IMAGE 1: CLOTHING -->
-                        <img src="images/ai-clothing.jpg" 
+                        <img src="images/ai-clothing.jpg.png" 
                              onerror="this.src='https://placehold.co/300x300/3b82f6/white?text=Clothing+Branding'"
                              alt="AI Clothing Branding" 
                              class="rounded-lg shadow-lg transform translate-y-4 w-full h-full object-cover">
                         
                         <!-- IMAGE 2: RESTAURANT -->
-                        <img src="images/ai-restaurant.jpg" 
+                        <img src="images/ai-restaurant.jpg.png" 
                              onerror="this.src='https://placehold.co/300x300/ef4444/white?text=Restaurant+Branding'"
                              alt="AI Restaurant Branding" 
                              class="rounded-lg shadow-lg w-full h-full object-cover">
                         
                         <!-- IMAGE 3: SOCIAL MEDIA -->
-                        <img src="images/ai-social.jpg" 
+                        <img src="images/ai-social.jpg.png" 
                              onerror="this.src='https://placehold.co/300x300/10b981/white?text=Social+Media+Post'"
                              alt="AI Social Media Post" 
                              class="rounded-lg shadow-lg transform translate-y-4 w-full h-full object-cover">
                         
                         <!-- IMAGE 4: DISPLAY & CANOPY -->
-                        <img src="images/ai-display.jpg" 
+                        <img src="images/ai-display.jpg.png" 
                              onerror="this.src='https://placehold.co/300x300/f59e0b/white?text=Display+%26+Canopy'"
                              alt="AI Display & Canopy" 
                              class="rounded-lg shadow-lg w-full h-full object-cover">
@@ -414,7 +420,7 @@
             </div>
             <div class="flex space-x-6">
                 <a href="#" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="#" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.instagram.com/us_my_service?igsh=MTBnNW1kN2xoeWhzeQ%3D%3D" target="_blank" rel="noopener noreferrer" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-instagram fa-lg"></i></a>
                 <a href="#" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-twitter fa-lg"></i></a>
                 <a href="#" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-linkedin fa-lg"></i></a>
             </div>
