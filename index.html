@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USmySERVICE | The Fastest Branding Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Oswald:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, .brand-font {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /* Page 1 Slant (Bottom Right Cut) */
+        .clip-path-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        
+        /* Page 2/3 Slant (Top Left Cut) - Adjusted for safety */
+        .clip-path-slant-reverse {
+            clip-path: polygon(0 10vw, 100% 0, 100% 100%, 0 100%);
+        }
+        
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Mobile Menu Animation */
+        .mobile-menu {
+            transition: max-height 0.3s ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        .mobile-menu.active {
+            max-height: 300px;
+        }
+
+        /* Ensure readability over dynamic backgrounds */
+        .text-shadow-strong {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="bg-white text-blue-900 fixed w-full z-50 shadow-lg transition-colors duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <!-- Stars Logo (No Box) -->
+                    <div class="flex items-center gap-0.5">
+                        <i class="fas fa-star text-blue-900 text-[10px]"></i>
+                        <i class="fas fa-star text-red-600 text-xs"></i>
+                        <i class="fas fa-star text-blue-900 text-[10px]"></i>
+                        <i class="fas fa-star text-red-600 text-xs"></i>
+                        <i class="fas fa-star text-blue-900 text-[10px]"></i>
+                    </div>
+                    <span class="text-lg font-bold brand-font tracking-wider">
+                        <span class="text-red-600">US</span><span class="text-blue-900">my</span><span class="text-red-600">SERVICE</span>
+                    </span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-semibold items-center">
+                    <a href="#pricing" class="text-blue-900 hover:text-red-600 transition">Price Guarantee</a>
+                    <a href="#services" class="text-blue-900 hover:text-red-600 transition">Services</a>
+                    <a href="#ai-marketing" class="text-blue-900 hover:text-red-600 transition">AI Agency</a>
+                    <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded uppercase text-sm tracking-wide transition shadow-md">Get a Quote</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden focus:outline-none text-blue-900">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 flex flex-col space-y-4 pb-4 text-center bg-white">
+                <a href="#pricing" class="block text-blue-900 hover:text-red-600 font-semibold">Price Guarantee</a>
+                <a href="#services" class="block text-blue-900 hover:text-red-600 font-semibold">Services</a>
+                <a href="#ai-marketing" class="block text-blue-900 hover:text-red-600 font-semibold">AI Agency</a>
+                <a href="#contact" class="block text-red-600 font-bold">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative bg-blue-900 text-white pt-32 pb-24 clip-path-slant overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- AI Generated Background Image -->
+            <img src="https://image.pollinations.ai/prompt/AI%20in%20advertising,%20futuristic%20neon%20circuitry,%20human%20head%20silhouettes,%20product%20mockups%20and%20ads%20interconnected,%20dark%20blue%20background,%20vibrant%20glowing%20lines,%20digital%20marketing%20concept" 
+                 alt="AI in Advertising Background" 
+                 class="w-full h-full object-cover opacity-70">
+        </div>
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] z-10"></div>
+        <div class="container mx-auto px-6 relative z-20 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+                <div class="inline-block bg-red-600 text-white px-3 py-1 text-sm font-bold uppercase tracking-widest mb-4 rounded text-shadow-strong">
+                    America's #1 Branding Hub
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 uppercase text-shadow-strong">
+                    The Fastest <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-white">Branding Agency</span>
+                </h1>
+                <p class="text-xl text-blue-100 mb-8 max-w-lg mx-auto md:mx-0 text-shadow-strong">
+                    We beat the market with our prices. From designing your physical products, displays, and brand to AI-powered social media, we are your one-stop design powerhouse.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="#pricing" class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded shadow-lg transform hover:scale-105 transition text-center text-shadow-strong">
+                        BEAT MY QUOTE
+                    </a>
+                    <a href="#services" class="border-2 border-white hover:bg-white hover:text-blue-900 font-bold py-4 px-8 rounded shadow-lg transition text-center text-shadow-strong">
+                        VIEW SERVICES
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 hidden md:flex justify-center">
+                <!-- Spacer/Content area -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Value Proposition Bar -->
+    <div class="bg-red-600 text-white py-4 shadow-md -mt-12 relative z-30 mx-4 md:mx-20 rounded-lg">
+        <div class="container mx-auto px-4 flex flex-wrap justify-around text-center items-center gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-bolt text-yellow-300 text-xl"></i>
+                <span class="font-bold uppercase">Fastest Turnaround</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-tag text-yellow-300 text-xl"></i>
+                <span class="font-bold uppercase">Lowest Price Guaranteed</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fas fa-flag-usa text-yellow-300 text-xl"></i>
+                <span class="font-bold uppercase">Express Delivery 24h</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section (Physical) -->
+    <section id="services" class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-red-600 font-bold tracking-wider uppercase text-sm mb-2">Physical Branding</h2>
+            <h3 class="text-4xl font-bold text-gray-900 mb-4">Display Your Brand. Dominant Presence.</h3>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                We connect you with the best high-quality suppliers, local or overseas*, free of charge. We take no commission—we are NOT a printing service. We make your branding vibrant, visible, and eye-catching. We do not manufacture banners, canopies, or packaging—we design only.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition group">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-10 transition z-10"></div>
+                     <img src="https://placehold.co/600x400/EEE/31343C?text=Custom+Canopies" alt="Canopy" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-4">
+                        <i class="fas fa-campground text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Custom Canopies</h4>
+                    <p class="text-gray-600 text-sm mb-4">Design 10x10, 10x20, and custom sizes. Full color, ready-to-print file.</p>
+                    <span class="text-green-600 font-bold text-sm">Starting at $49.99</span>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition group">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-10 transition z-10"></div>
+                    <img src="https://placehold.co/600x400/EEE/31343C?text=Banners+%26+Displays" alt="Banners" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 mb-4">
+                        <i class="fas fa-scroll text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Banners & Displays</h4>
+                    <p class="text-gray-600 text-sm mb-4">Design vinyl, mesh, and fabric. Retractable banner stands for trade shows. Weather resistant.</p>
+                    <span class="text-green-600 font-bold text-sm">Starting at $19.99</span>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition group">
+                <div class="h-48 bg-gray-100 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-blue-900 opacity-0 group-hover:opacity-10 transition z-10"></div>
+                    <img src="https://placehold.co/600x400/EEE/31343C?text=Packaging+%26+Labels" alt="Packaging" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 mb-4">
+                        <i class="fas fa-box-open text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Packaging & Labels</h4>
+                    <p class="text-gray-600 text-sm mb-4">Custom design boxes, nutrition facts, mailers, and product labels etc.</p>
+                    <span class="text-green-600 font-bold text-sm">Starting at $10.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Marketing Section (Digital) -->
+    <section id="ai-marketing" class="py-20 pt-32 md:pt-40 bg-gray-900 text-white clip-path-slant-reverse relative">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Images moved to Left to fit the Slant (Deep cut on left) -->
+                <div class="md:w-1/2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- IMAGE 1: CLOTHING -->
+                        <img src="images/ai-clothing.jpg" 
+                             onerror="this.src='https://placehold.co/300x300/3b82f6/white?text=Clothing+Branding'"
+                             alt="AI Clothing Branding" 
+                             class="rounded-lg shadow-lg transform translate-y-4 w-full h-full object-cover">
+                        
+                        <!-- IMAGE 2: RESTAURANT -->
+                        <img src="images/ai-restaurant.jpg" 
+                             onerror="this.src='https://placehold.co/300x300/ef4444/white?text=Restaurant+Branding'"
+                             alt="AI Restaurant Branding" 
+                             class="rounded-lg shadow-lg w-full h-full object-cover">
+                        
+                        <!-- IMAGE 3: SOCIAL MEDIA -->
+                        <img src="images/ai-social.jpg" 
+                             onerror="this.src='https://placehold.co/300x300/10b981/white?text=Social+Media+Post'"
+                             alt="AI Social Media Post" 
+                             class="rounded-lg shadow-lg transform translate-y-4 w-full h-full object-cover">
+                        
+                        <!-- IMAGE 4: DISPLAY & CANOPY -->
+                        <img src="images/ai-display.jpg" 
+                             onerror="this.src='https://placehold.co/300x300/f59e0b/white?text=Display+%26+Canopy'"
+                             alt="AI Display & Canopy" 
+                             class="rounded-lg shadow-lg w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Text moved to Right (Higher part of slant) -->
+                <div class="md:w-1/2">
+                    <div class="inline-block bg-blue-500 text-white px-3 py-1 text-sm font-bold uppercase tracking-widest mb-4 rounded">
+                        The Future of Marketing
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">AI Marketing Agency</h2>
+                    <p class="text-gray-400 text-lg mb-6">
+                        Stop paying thousands for photographers and graphic designers. We use cutting-edge Artificial Intelligence to build your brand's digital presence.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-400 mr-3"></i>
+                            <span>AI-Generated Social Media Images (Instagram, Facebook, LinkedIn)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-400 mr-3"></i>
+                            <span>Automated Ad Creatives & Copywriting</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-400 mr-3"></i>
+                            <span>Hyper-Realistic Product Mockups without a Photoshoot</span>
+                        </li>
+                    </ul>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded shadow-lg transition">
+                        Start Your Digital Campaign
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Guarantee Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-red-50 border-2 border-red-100 rounded-2xl p-8 md:p-12 text-center max-w-4xl mx-auto shadow-xl relative overflow-hidden">
+                <!-- Badge -->
+                <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-6 py-2 transform rotate-45 translate-x-8 translate-y-4 shadow">
+                    GUARANTEED
+                </div>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <i class="fas fa-hand-holding-usd text-red-600 mr-2"></i> 
+                    We Beat ANY Price. Guaranteed.
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">
+                    Found a cheaper quote from a local branding company or an online giant? 
+                    <span class="font-bold text-red-600">We will match it and beat it by 5%.</span>
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6 text-left mb-8">
+                    <div class="bg-white p-6 rounded shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-lg mb-2">Step 1</h4>
+                        <p class="text-sm text-gray-600">Get a quote from any US competitor for the same product/service.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-lg mb-2">Step 2</h4>
+                        <p class="text-sm text-gray-600">Send us the quote via the form below or email us.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-lg mb-2">Step 3</h4>
+                        <p class="text-sm text-gray-600">We verify it and send you a lower invoice instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Contact Info -->
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">Ready to Dominate Your Market?</h2>
+                    <p class="text-gray-600 mb-8">
+                        Whether you need a 20ft Canopy for an event next week or a month of AI-generated content, we are ready.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-900 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email Us</h4>
+                                <p class="text-gray-600">quotes@usmyservice.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-900 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Call Us</h4>
+                                <p class="text-gray-600">1-800-US-BRAND</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-900 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Express Delivery</h4>
+                                <p class="text-gray-600">Express delivery 24h available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="md:w-1/2 bg-white p-8 rounded-xl shadow-lg">
+                    <form class="space-y-4">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">First Name</label>
+                                <input type="text" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500" placeholder="John">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Last Name</label>
+                                <input type="text" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Email Address</label>
+                            <input type="email" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500" placeholder="john@company.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Service Interested In</label>
+                            <select class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500">
+                                <option>Custom Canopy / Tent</option>
+                                <option>Banners / Displays</option>
+                                <option>Packaging / Labels</option>
+                                <option>AI Marketing / Social Media</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Do you have a competitor quote?</label>
+                            <select class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:border-blue-500">
+                                <option>No, just need a price</option>
+                                <option>Yes, I want you to beat it</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-1">Message</label>
+                            <textarea class="w-full border border-gray-300 p-2 rounded h-24 focus:outline-none focus:border-blue-500" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded transition uppercase tracking-wide">
+                            Get Best Price
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-blue-900 py-10 border-t border-gray-200">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0 flex items-center gap-3">
+                <!-- Stars Logo Footer (No Box) -->
+                <div class="flex items-center gap-1">
+                    <i class="fas fa-star text-blue-900 text-xs"></i>
+                    <i class="fas fa-star text-red-600 text-sm"></i>
+                    <i class="fas fa-star text-blue-900 text-xs"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold brand-font">
+                        <span class="text-red-600">US</span><span class="text-blue-900">my</span><span class="text-red-600">SERVICE</span>
+                    </span>
+                    <p class="text-gray-500 text-sm mt-1">© 2025 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="#" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="text-blue-900 hover:text-red-600 transition"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('menu-btn');
+        const nav = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
