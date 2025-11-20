@@ -62,10 +62,15 @@
             <div class="flex justify-between items-center">
                 <!-- Logo Container -->
                 <a href="#" class="flex items-center">
-                    <!-- Mobile Height: h-12, Desktop Height: h-20 -->
-                    <img src="images/USMYSERVICE.png" 
+                    <!-- 
+                        UPDATED LOGO PATH:
+                        Changed src="images/USMYSERVICE.png" to src="USMYSERVICE.png"
+                        because your screenshot shows the file is in the main folder.
+                    -->
+                    <img src="USMYSERVICE.png" 
                          alt="USmySERVICE Digital Agency" 
-                         class="h-12 md:h-20 w-auto object-contain">
+                         class="h-14 md:h-20 w-auto object-contain"
+                         onerror="this.onerror=null; this.src='https://placehold.co/200x80/transparent/1e3a8a?text=USmySERVICE';">
                 </a>
                 
                 <!-- Desktop Menu -->
@@ -465,8 +470,11 @@
     <footer class="bg-white text-blue-900 py-10 border-t border-gray-200">
         <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
             <div class="mb-4 md:mb-0">
-                <!-- Footer Logo -->
-                <img src="images/USMYSERVICE.png" alt="USmySERVICE" class="h-12 w-auto object-contain">
+                <!-- Footer Logo with Fallback - Updated to ROOT path -->
+                <img src="USMYSERVICE.png" 
+                     alt="USmySERVICE" 
+                     class="h-12 w-auto object-contain"
+                     onerror="this.onerror=null; this.src='https://placehold.co/200x80/transparent/1e3a8a?text=USmySERVICE';">
                 <p class="text-gray-500 text-sm mt-2">© 2025 All Rights Reserved.</p>
             </div>
             <div class="flex space-x-6">
