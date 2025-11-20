@@ -89,11 +89,14 @@
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 flex flex-col space-y-4 pb-4 text-center bg-white">
-                <a href="#pricing" class="block text-blue-900 hover:text-red-600 font-semibold">Price Guarantee</a>
-                <a href="#services" class="block text-blue-900 hover:text-red-600 font-semibold">Services</a>
-                <a href="#ai-marketing" class="block text-blue-900 hover:text-red-600 font-semibold">AI Agency</a>
-                <a href="#contact" class="block text-red-600 font-bold">Get a Quote</a>
+            <!-- Removed mt-4, added border-t for separation, moved spacing to padding -->
+            <div id="mobile-menu" class="mobile-menu md:hidden flex flex-col space-y-4 text-center bg-gray-50 border-t border-gray-200 absolute left-0 w-full shadow-lg">
+                <a href="#pricing" class="block text-blue-900 hover:text-red-600 font-semibold py-2 mt-4">Price Guarantee</a>
+                <a href="#services" class="block text-blue-900 hover:text-red-600 font-semibold py-2">Services</a>
+                <a href="#ai-marketing" class="block text-blue-900 hover:text-red-600 font-semibold py-2">AI Agency</a>
+                <div class="pb-6">
+                    <a href="#contact" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded uppercase text-sm tracking-wide transition shadow-md">Get a Quote</a>
+                </div>
             </div>
         </div>
     </nav>
